@@ -1,0 +1,74 @@
+print("hello")
+x = "Hello World"
+print("string:",x)
+a = 20
+print("int:",a)
+b = 20.5
+print("float:",b)
+c = 1j
+print("complex:",c)
+d = ["apple", "banana", "cherry"]
+print("list:",d)
+d[0]="tanya"
+print(d[0]) #it will change sucessfully from apple to tanya
+#In Python, ("apple", "banana", "cherry") represents a tuple data type. 
+# A tuple is an ordered collection of items, similar to a list,
+#  but tuples are immutable, meaning their elements cannot be changed once created.
+e = ("apple", "banana", "cherry")
+print("tuple:",e)
+#e[0]="tan" #it gives error
+
+f = range(6)
+print("range:",f)
+for i in f:  #loop
+    print(i)
+
+
+#In Python, dictionaries (dicts) are used to store collections of data in key-value pairs.
+#  They are highly useful because they allow you to quickly retrieve values based on their
+#  associated keys,
+#  rather than relying on numerical indexes as with lists or tuples.
+
+g= {"name" : "John", "age" : 36}
+print("dictionary:",g["name"])
+
+
+#In Python, {"apple", "banana", "cherry"} represents a set data type. 
+# Sets are unordered collections of unique elements.
+#  They are commonly used when you want to store unique elements and perform set 
+# operations such as union,
+#  intersection, difference, and symmetric difference efficiently.
+
+h = {"apple", "banana", 20}
+print("set:",h)
+
+
+#In Python, frozenset is an immutable variant of the built-in set type.
+#  This means that once a frozenset is created,
+#  you cannot add or remove elements from it, or modify its elements in any way.
+m = frozenset({"apple", "banana", "cherry"})
+print("frozenset:",m)
+#type method is used to check datatype of value
+print(type(m)) 
+index_value = 0
+for i, element in enumerate(m):
+    if i == index_value:
+        print(element)
+        break
+#In Python, a frozenset is an unordered collection of unique elements, 
+# so you cannot rely on indexing to access elements as you would with
+#  sequences like lists or tuples. When you print a frozenset, the order
+#  of elements may not be the same as the order in which they were defined.
+#  This means that you cannot predict which element will be at a particular index.
+
+n = True
+print("boolaen",n)
+
+n1 = b"Hello"
+print("byte",n1) # Output: 72 (ASCII code for 'H')
+print("first byte",n1[0])
+
+m2= None
+print("noneType:",m2)
+
+
